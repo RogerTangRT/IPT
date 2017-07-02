@@ -1,0 +1,5 @@
+/media/Compartilhada/Servico_Monitorado/Servico_Monitorado/obj/x86/Release/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/media/Compartilhada/Servico_Monitorado/Servico_Monitorado/bin/Release/Servico_Monitorado.exe.config
+/media/Compartilhada/Servico_Monitorado/Servico_Monitorado/bin/Release/Servico_Monitorado.exe.mdb
+/media/Compartilhada/Servico_Monitorado/Servico_Monitorado/obj/x86/Release/Servico_Monitorado.exe
+/media/Compartilhada/Servico_Monitorado/Servico_Monitorado/obj/x86/Release/Servico_Monitorado.exe.mdb

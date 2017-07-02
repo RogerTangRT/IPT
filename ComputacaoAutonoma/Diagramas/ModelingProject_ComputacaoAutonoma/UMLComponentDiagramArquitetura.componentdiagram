@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="14f095d2-0a69-493b-ba6c-321173797229" name="Arquitetura" linkedPackageId="9a7194d8-8848-4c38-8dcd-4afce4e0800a" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="464e7cb6-f5ac-4594-a2fe-e3b474261525" name="Orquestrador" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="73e6b682-095a-47f2-b78c-b647c4c4074f" name="process" profile="StandardProfileL2">
+            <elementDefinition Id="fc122070-1cde-4347-b16b-ea657c72a0f8" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="bc8d255c-2cfd-4ed4-8e07-82527ed56dbd" />
+        <ownedAttributesInternal>
+          <requiredInterface Id="523f9065-fc2f-4835-bb6a-c86a18103200" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="54bb11fc-f957-41ba-b14a-b626e4947f48" />
+            <suppliersInternal>
+              <dependency Id="3eeac394-b83f-4447-97b8-7acf7345e839">
+                <providedInterfaceMoniker Id="3b15b580-ddc0-40d0-ab68-7d1d4baf0277" LastKnownName="Port2" />
+                <elementDefinition Id="0f4c010d-6481-4120-817f-1b5cdd58d914" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="e0c111c4-870f-4153-8b14-8b2a85aae344" LastKnownName="IService_Monitorado" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface Id="77f059dc-7813-4d1c-adab-804a9cc64add" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="af387398-7982-403c-a4e2-527d47023732" />
+            <suppliersInternal>
+              <dependency Id="e4b50067-020e-4769-a1e1-ce3a5a03f730">
+                <providedInterfaceMoniker Id="aafdc7b8-d353-4797-bc18-a0e5de3417d6" LastKnownName="Port1" />
+                <elementDefinition Id="3027fcb6-884e-42ca-a202-9c43aa85760f" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="10451fdf-cafb-42ed-a5e0-79f6da66dd97" LastKnownName="IService_GerenciadorCor" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface Id="678fed10-903f-45a1-b59b-0ca582c69a96" name="Port3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="17318998-ef2b-49d4-b323-f2ac7186e41f" />
+            <suppliersInternal>
+              <dependency Id="8d1b67d8-ca4a-4ecd-bd98-a1b2084db5f1">
+                <providedInterfaceMoniker Id="bcfcc3b7-bc8c-445f-95d7-a497e16a12d2" LastKnownName="Port2" />
+                <elementDefinition Id="5597fb84-1599-40a0-a773-6faadea29b84" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="2d4b8cb9-b8f8-4d9f-b926-92326a8eb4e3" LastKnownName="IService_RespostaAgente" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface Id="cc3b92e1-3d0a-4c96-997a-7ee242d08f95" name="Port4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="d5c1f8ff-46ee-415d-8d99-d8e6009b13f9" />
+            <suppliersInternal>
+              <dependency Id="9a9184eb-c3d4-4977-b69c-a6936770b9a2">
+                <providedInterfaceMoniker Id="43b318dd-6898-41bb-8cea-d9db199d277c" LastKnownName="Port3" />
+                <elementDefinition Id="e59c25f1-4b83-4a67-9375-6cf7de894cab" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="3e723650-afb1-4a82-9f5b-42afcb633e75" LastKnownName="IService_SolicitacaoAjuda" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="5f221306-9ed0-4d9d-9abb-44a5dde5ab5c" name="Agente Autônomo" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="9fd111e1-cbad-4f85-8441-a1cfa62aa8a6" name="service" profile="StandardProfileL2">
+            <elementDefinition Id="ab507380-b33f-4cf6-a48b-cddcd8972a57" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="77e80c1b-9299-409c-a743-091311d12c62" />
+        <ownedAttributesInternal>
+          <requiredInterface Id="7c833ac3-a20c-4d53-bcef-41d963d0ea48" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="4d34ce60-0123-4577-8e7a-bd8b21793283" />
+            <suppliersInternal>
+              <dependency Id="a995361b-ee84-4f0f-89cf-1f6d1190f7e3">
+                <providedInterfaceMoniker Id="7849e0c0-d311-4172-bbb2-4618436e8fb1" LastKnownName="Port1" />
+                <elementDefinition Id="205999ce-9181-4fba-b8cc-0ba40ab93fb8" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="21164c70-80d4-422e-9dc8-097094fa60c6" LastKnownName="IService_Gerenciador_Recurso" />
+            </type_NamedElement>
+          </requiredInterface>
+          <providedInterface Id="bcfcc3b7-bc8c-445f-95d7-a497e16a12d2" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="0bb94837-6e98-4094-9ee3-24cc83511165" />
+            <type_NamedElement>
+              <interfaceMoniker Id="4904c3fb-5549-40fa-b102-fc663cc26f69" LastKnownName="IService_RespostaAgente" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="43b318dd-6898-41bb-8cea-d9db199d277c" name="Port3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="d650a97a-e6ad-47db-96cf-f4136f05daca" />
+            <type_NamedElement>
+              <interfaceMoniker Id="db067da1-281e-4df6-9ed1-1f40566f01fe" LastKnownName="IService_SolicitacaoAjuda" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="4cc3391d-66c4-45df-8919-e29b5ad9429c" name="Agente Monitor de Recurso" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="832b5833-ff98-433e-8de1-7b45d076b548" name="service" profile="StandardProfileL2">
+            <elementDefinition Id="b7cb608d-e212-4963-9b1a-4965f7204fbf" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="15aa789d-274b-4946-bc6a-39b283b544ed" />
+        <suppliersInternal>
+          <dependency Id="887b9356-966a-4813-9ca2-5633c53e55d6">
+            <componentMoniker Id="fb040b96-606c-46e2-a173-f87ccc0f4e72" LastKnownName="Recurso Monitorado" />
+            <elementDefinition Id="80fd0ce1-a3c7-46ea-9390-54169bb344f6" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <providedInterface Id="7849e0c0-d311-4172-bbb2-4618436e8fb1" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="9db3b84c-35a9-4115-941e-eafef6f2a849" />
+            <type_NamedElement>
+              <interfaceMoniker Id="1cef840a-91dd-44b9-8050-7e2278f760f5" LastKnownName="IService_Gerenciador_Recurso" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="fb040b96-606c-46e2-a173-f87ccc0f4e72" name="Recurso Monitorado" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="a6b49350-a703-4496-bf83-ed7ed62a06ef" name="service" profile="StandardProfileL2">
+            <elementDefinition Id="3b24be97-aae1-48cc-afbc-ac878a093c6f" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="d4b89db6-9010-4865-8985-b0d78f117e94" />
+        <ownedAttributesInternal>
+          <providedInterface Id="3b15b580-ddc0-40d0-ab68-7d1d4baf0277" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="010ae6ae-32de-42de-9c6b-aa86ca041a91" />
+            <type_NamedElement>
+              <interfaceMoniker Id="a89dc9fb-81fc-42d5-b542-978b9e924139" LastKnownName="IService_Monitorado" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="188c8c67-6b05-4f1e-9ef3-a42c85b9da71" name="Serviço Cor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="dde2c7a9-55d3-4bbe-8584-2715bf0a012e" name="service" profile="StandardProfileL2">
+            <elementDefinition Id="fb32381f-f826-4b21-99e8-b741fca7d205" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="2058b432-ee3a-48a2-8a37-271d5df5bfbe" />
+        <ownedAttributesInternal>
+          <providedInterface Id="aafdc7b8-d353-4797-bc18-a0e5de3417d6" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="a730123a-0811-4d62-904d-f87dfb92ab4b" />
+            <type_NamedElement>
+              <interfaceMoniker Id="5b979f18-6d12-4d38-8e1d-af186e7099f1" LastKnownName="IService_GerenciadorCor" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="a89dc9fb-81fc-42d5-b542-978b9e924139" name="IService_Monitorado" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9383eb3f-653c-4490-b26e-6bdc10924bd2" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="e0c111c4-870f-4153-8b14-8b2a85aae344" name="IService_Monitorado" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7ffea282-1f90-4c29-831c-e4ef41b1fc6e" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="5b979f18-6d12-4d38-8e1d-af186e7099f1" name="IService_GerenciadorCor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="afd05786-6fdc-4832-b74a-7887765e8b3b" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="10451fdf-cafb-42ed-a5e0-79f6da66dd97" name="IService_GerenciadorCor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1be57372-99ad-4cbe-8bcf-f2b484b60a3d" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="1cef840a-91dd-44b9-8050-7e2278f760f5" name="IService_Gerenciador_Recurso" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d87ff65b-1f37-4ce7-9137-fa5aeffcb5ee" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="21164c70-80d4-422e-9dc8-097094fa60c6" name="IService_Gerenciador_Recurso" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="532ad772-185f-414f-8df5-1dc056c3e9be" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="4904c3fb-5549-40fa-b102-fc663cc26f69" name="IService_RespostaAgente" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d4a7baa3-5940-43f6-9049-91f1580e5980" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="2d4b8cb9-b8f8-4d9f-b926-92326a8eb4e3" name="IService_RespostaAgente" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2de76b0b-c4a0-4d1d-a197-ada05e557053" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="db067da1-281e-4df6-9ed1-1f40566f01fe" name="IService_SolicitacaoAjuda" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d5a71e95-3915-4161-b62c-6597078c052a" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="3e723650-afb1-4a82-9f5b-42afcb633e75" name="IService_SolicitacaoAjuda" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8e7f14da-3f70-443b-86f3-5f028944373f" />
+      </Interface>
+    </modelContainsNamedElements>
+  </packagedElements>
+  <package Id="9a7194d8-8848-4c38-8dcd-4afce4e0800a" name="ModelingProject_Inicializacao">
+    <elementDefinition Id="bd3335ae-b9ea-4c8e-ba03-5ba30f809465" />
+    <profileInstances>
+      <packageHasProfileInstances Id="bb9fd71e-35c1-4199-8396-9889b5adf20a">
+        <profileInstance Id="6733aa43-cc73-4cb5-aadc-8eb5cff66d02" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="a18b3232-6780-4b41-8ab8-c2e9ee625733">
+        <profileInstance Id="1a3c26e8-2dd5-4cf2-9246-a672d28ac317" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</componentModel>

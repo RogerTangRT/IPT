@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="AgenteMonitorRecurso/AgenteMonitorRecurso.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AgenteMonitorRecurso/Service_Gerenciador_Recurso.cs">
+    <Files>
+      <File FileName="AgenteMonitorRecurso/Service_Gerenciador_Recurso.cs" Line="11" Column="1" />
+      <File FileName="AgenteMonitorRecurso/IService_Gerenciador_Recurso.cs" Line="5" Column="31" />
+      <File FileName="AgenteMonitorRecurso/Program.cs" Line="26" Column="34" />
+      <File FileName="AgenteMonitorRecurso/app.config" Line="28" Column="64" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

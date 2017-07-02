@@ -1,0 +1,116 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Formularios", "Formularios", "{23F0EE89-63CB-483E-A916-8CFA4C464CE1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Icones", "Icones", "{3AD40515-0663-4611-8D83-9E64069C108B}"
+	ProjectSection(SolutionItems) = preProject
+		Formularios\Imagens\Icones\agente.ico = Formularios\Imagens\Icones\agente.ico
+		Formularios\Imagens\Icones\orquestrador.ico = Formularios\Imagens\Icones\orquestrador.ico
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orquestrador", "Orquestrador\Orquestrador.csproj", "{4672BE41-6F5F-444A-BEB1-203C7E405687}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6D713231-A6E8-4A04-85E9-EB8CBDB6E65A} = {6D713231-A6E8-4A04-85E9-EB8CBDB6E65A}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Imagens", "Imagens", "{EF9154FF-2058-41F2-94E8-939F75766C9D}"
+	ProjectSection(SolutionItems) = preProject
+		Formularios\Imagens\Seta.jpg = Formularios\Imagens\Seta.jpg
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary_InterfaceMensagens", "ClassLibrary_EscreveControles\ClassLibrary_InterfaceMensagens.csproj", "{D38DECA3-9384-400F-AA36-009A674EFF86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgenteAutonomo", "AgenteAutonomo\AgenteAutonomo.csproj", "{40CE2B2E-7FE0-4686-BEAC-3699D7F9DEC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorCor", "GerenciadorCor\GerenciadorCor.csproj", "{2DC2A11A-7E6E-4FCA-BA13-165578256EA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary_UDDI", "ClassLibrary_UDDI\ClassLibrary_UDDI.csproj", "{9E426A38-607F-4E18-84C1-74DC2DE99D03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bibliotecas", "Bibliotecas", "{6FDD89F1-95CA-462A-B13F-723C08E79BF8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RecursoMonitorado", "RecursoMonitorado", "{9E6B492E-3972-4A3E-97F8-5DC51FF1946D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servico_Monitorado", "Servico_Monitorado\Servico_Monitorado.csproj", "{6D713231-A6E8-4A04-85E9-EB8CBDB6E65A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host_ServicoMonitorado", "Host_ServicoMonitorado\Host_ServicoMonitorado.csproj", "{8B05FB98-F7D1-433A-937D-0B4FB5D494E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgenteMonitorRecurso", "AgenteMonitorRecurso\AgenteMonitorRecurso.csproj", "{2894AA79-F2DD-4602-8633-8EE7CB268273}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diagramas", "Diagramas", "{95CAA569-DBBE-41CD-8B14-BF6921C7A0D3}"
+	ProjectSection(SolutionItems) = preProject
+		Diagramas\AgenteGerenteAutonomo.dgml = Diagramas\AgenteGerenteAutonomo.dgml
+		Diagramas\CodeMap1.dgml = Diagramas\CodeMap1.dgml
+		Diagramas\CodeMap2.dgml = Diagramas\CodeMap2.dgml
+		Diagramas\CodeMap_Diagrama_Componentes.dgml = Diagramas\CodeMap_Diagrama_Componentes.dgml
+		Diagramas\CodeMap_Gerenciador_Cor.dgml = Diagramas\CodeMap_Gerenciador_Cor.dgml
+		Diagramas\CodeMap_Gerente_Recurso.dgml = Diagramas\CodeMap_Gerente_Recurso.dgml
+		Diagramas\CodeMap_GerenteAutonomo.dgml = Diagramas\CodeMap_GerenteAutonomo.dgml
+		Diagramas\CodeMap_Orquestrador.dgml = Diagramas\CodeMap_Orquestrador.dgml
+		Diagramas\CodeMap_ServicoMonitorado.dgml = Diagramas\CodeMap_ServicoMonitorado.dgml
+	EndProjectSection
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject_ComputacaoAutonoma", "Diagramas\ModelingProject_ComputacaoAutonoma\ModelingProject_ComputacaoAutonoma.modelproj", "{1CB373B5-4FC7-42BF-9B89-684C269D194F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4672BE41-6F5F-444A-BEB1-203C7E405687}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4672BE41-6F5F-444A-BEB1-203C7E405687}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4672BE41-6F5F-444A-BEB1-203C7E405687}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4672BE41-6F5F-444A-BEB1-203C7E405687}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D38DECA3-9384-400F-AA36-009A674EFF86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D38DECA3-9384-400F-AA36-009A674EFF86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D38DECA3-9384-400F-AA36-009A674EFF86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D38DECA3-9384-400F-AA36-009A674EFF86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40CE2B2E-7FE0-4686-BEAC-3699D7F9DEC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40CE2B2E-7FE0-4686-BEAC-3699D7F9DEC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40CE2B2E-7FE0-4686-BEAC-3699D7F9DEC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40CE2B2E-7FE0-4686-BEAC-3699D7F9DEC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DC2A11A-7E6E-4FCA-BA13-165578256EA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DC2A11A-7E6E-4FCA-BA13-165578256EA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DC2A11A-7E6E-4FCA-BA13-165578256EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DC2A11A-7E6E-4FCA-BA13-165578256EA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E426A38-607F-4E18-84C1-74DC2DE99D03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E426A38-607F-4E18-84C1-74DC2DE99D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E426A38-607F-4E18-84C1-74DC2DE99D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E426A38-607F-4E18-84C1-74DC2DE99D03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D713231-A6E8-4A04-85E9-EB8CBDB6E65A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D713231-A6E8-4A04-85E9-EB8CBDB6E65A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D713231-A6E8-4A04-85E9-EB8CBDB6E65A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D713231-A6E8-4A04-85E9-EB8CBDB6E65A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B05FB98-F7D1-433A-937D-0B4FB5D494E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B05FB98-F7D1-433A-937D-0B4FB5D494E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B05FB98-F7D1-433A-937D-0B4FB5D494E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B05FB98-F7D1-433A-937D-0B4FB5D494E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2894AA79-F2DD-4602-8633-8EE7CB268273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2894AA79-F2DD-4602-8633-8EE7CB268273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2894AA79-F2DD-4602-8633-8EE7CB268273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2894AA79-F2DD-4602-8633-8EE7CB268273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CB373B5-4FC7-42BF-9B89-684C269D194F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CB373B5-4FC7-42BF-9B89-684C269D194F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CB373B5-4FC7-42BF-9B89-684C269D194F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CB373B5-4FC7-42BF-9B89-684C269D194F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3AD40515-0663-4611-8D83-9E64069C108B} = {EF9154FF-2058-41F2-94E8-939F75766C9D}
+		{4672BE41-6F5F-444A-BEB1-203C7E405687} = {23F0EE89-63CB-483E-A916-8CFA4C464CE1}
+		{EF9154FF-2058-41F2-94E8-939F75766C9D} = {23F0EE89-63CB-483E-A916-8CFA4C464CE1}
+		{D38DECA3-9384-400F-AA36-009A674EFF86} = {23F0EE89-63CB-483E-A916-8CFA4C464CE1}
+		{40CE2B2E-7FE0-4686-BEAC-3699D7F9DEC2} = {23F0EE89-63CB-483E-A916-8CFA4C464CE1}
+		{2DC2A11A-7E6E-4FCA-BA13-165578256EA6} = {6FDD89F1-95CA-462A-B13F-723C08E79BF8}
+		{9E426A38-607F-4E18-84C1-74DC2DE99D03} = {6FDD89F1-95CA-462A-B13F-723C08E79BF8}
+		{6D713231-A6E8-4A04-85E9-EB8CBDB6E65A} = {9E6B492E-3972-4A3E-97F8-5DC51FF1946D}
+		{8B05FB98-F7D1-433A-937D-0B4FB5D494E3} = {9E6B492E-3972-4A3E-97F8-5DC51FF1946D}
+		{2894AA79-F2DD-4602-8633-8EE7CB268273} = {23F0EE89-63CB-483E-A916-8CFA4C464CE1}
+		{1CB373B5-4FC7-42BF-9B89-684C269D194F} = {95CAA569-DBBE-41CD-8B14-BF6921C7A0D3}
+	EndGlobalSection
+EndGlobal

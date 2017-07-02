@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1cb373b5-4fc7-42bf-9b89-684c269d194f}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>ModelingProject_ComputacaoAutonoma</Name>
+    <RootNamespace>ModelingProject_ComputacaoAutonoma</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="UMLComponentDiagram_Arquitetura.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLComponentDiagram_Arquitetura.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLComponentDiagram_Arquitetura.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagram_Inicializacao.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagram_Inicializacao.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagram_Inicializacao.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagram_MaquinaRemotaParadaServicoAlternativoParado.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagram_MaquinaRemotaParadaServicoAlternativoParado.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagram_MaquinaRemotaParadaServicoAlternativoParado.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagram_MaquinaRemotaParadaServicoAlternativoRespondendo.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagram_MaquinaRemotaParadaServicoAlternativoRespondendo.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagram_MaquinaRemotaParadaServicoAlternativoRespondendo.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagram_NenhumServidorRespondendo.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagram_NenhumServidorRespondendo.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagram_NenhumServidorRespondendo.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagram_SemAgentes.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagram_SemAgentes.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagram_SemAgentes.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagram_ServicoRemotoParadoAlternativoSemAcesso.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagram_ServicoRemotoParadoAlternativoSemAcesso.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagram_ServicoRemotoParadoAlternativoSemAcesso.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagram_ServicoRemotoRespondendo.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagram_ServicoRemotoRespondendo.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagram_ServicoRemotoRespondendo.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="UMLSequenceDiagram_ServiçoRemotoParado.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UMLSequenceDiagram_ServiçoRemotoParado.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UMLSequenceDiagram_ServiçoRemotoParado.sequencediagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\ModelingProject_ComputacaoAutonoma.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+</Project>

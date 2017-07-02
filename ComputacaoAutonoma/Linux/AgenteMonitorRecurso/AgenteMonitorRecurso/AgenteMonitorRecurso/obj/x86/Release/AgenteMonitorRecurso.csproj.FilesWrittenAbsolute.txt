@@ -1,0 +1,6 @@
+/media/Compartilhada/AgenteMonitorRecurso/AgenteMonitorRecurso/AgenteMonitorRecurso/obj/x86/Release/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/media/Compartilhada/AgenteMonitorRecurso/AgenteMonitorRecurso/AgenteMonitorRecurso/bin/Release/AgenteMonitorRecurso.exe.config
+/media/Compartilhada/AgenteMonitorRecurso/AgenteMonitorRecurso/AgenteMonitorRecurso/bin/Release/AgenteMonitorRecurso.exe.mdb
+/media/Compartilhada/AgenteMonitorRecurso/AgenteMonitorRecurso/AgenteMonitorRecurso/bin/Release/AgenteMonitorRecurso.exe
+/media/Compartilhada/AgenteMonitorRecurso/AgenteMonitorRecurso/AgenteMonitorRecurso/obj/x86/Release/AgenteMonitorRecurso.exe
+/media/Compartilhada/AgenteMonitorRecurso/AgenteMonitorRecurso/AgenteMonitorRecurso/obj/x86/Release/AgenteMonitorRecurso.exe.mdb

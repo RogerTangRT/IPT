@@ -1,0 +1,9 @@
+<publishData>
+  <publishTarget publishUrl="http://localhost/GerenciadorCor">
+    <file relUrl="Web.config" publishTime="04/14/2017 01:00:12" />
+    <file relUrl="bin/GerenciadorCor.dll.config" publishTime="04/14/2017 01:00:12" />
+    <file relUrl="bin/GerenciadorCor.dll" publishTime="04/18/2017 16:26:21" />
+    <file relUrl="bin/GerenciadorCor.pdb" publishTime="04/18/2017 16:26:21" />
+    <file relUrl="GerenciadorCor.Service_GerenciadorCor.svc" publishTime="04/18/2017 16:26:33" />
+  </publishTarget>
+</publishData>

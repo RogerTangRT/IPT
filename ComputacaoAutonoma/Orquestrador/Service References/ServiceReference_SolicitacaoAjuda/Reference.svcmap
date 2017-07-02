@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="91742274-4ede-4e07-a562-19189f328162" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Agente_Autonomo/Service_SolicitacaoAjuda/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="f821548a-8513-455e-b294-28d504e9e489" SourceId="1" SourceUrl="http://localhost:8733/Agente_Autonomo/Service_SolicitacaoAjuda/?xsd=xsd0" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="67ebe9f0-490d-477e-91aa-f808b773bd3a" SourceId="1" SourceUrl="http://localhost:8733/Agente_Autonomo/Service_SolicitacaoAjuda/?xsd=xsd1" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="f7373f8f-199a-4c7e-b6ac-ff40e87f6ab6" SourceId="1" SourceUrl="http://localhost:8733/Agente_Autonomo/Service_SolicitacaoAjuda/?disco" />
+    <MetadataFile FileName="Service_SolicitacaoAjuda.wsdl" MetadataType="Wsdl" ID="cede381e-1cb6-4fa3-b8e7-e641a7000bea" SourceId="1" SourceUrl="http://localhost:8733/Agente_Autonomo/Service_SolicitacaoAjuda/?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
