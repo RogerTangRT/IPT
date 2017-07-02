@@ -1,0 +1,37 @@
+Configuração do Projeto
+=======================
+Pré-Requisitos
+1) Visual Studio Instalado
+2) IIS local instalado
+
+1) Instalação do Servico de Cor no IIS local
+1.1) Executar o Visual Studio como Administrador
+1.2) Publicar atravéz do Visual Studio o serviço GerenciadorCor para http://localhost/GerenciadorCor
+DICA: Botão direito do Mouse em Bibliotecas/GerenciadorCor e selecione Publish...
+
+2) Instalar o "Serviço Monitorado" nas máquinas que deverão responde ao serviço
+2.1) Abrir o Developer Command Prompt do Visual Studio como Administrador
+2.2) Ir para pasta do Host do Serviço Monitorado na pasta bin/Debug. EX.:
+C:\ComputacaoAutonoma\Host_ServicoMonitorado\bin\Debug
+2.2) Executar o comando - Instalutil. Ex.:
+>installutil Host_ServicoMonitorado.exe 
+
+3) Configurar a Lista de UDDI Simulado
+3.1) Editar o arquivo XMLFile_UDDI.xml que se encontra na pasta ClassLibrary_UDDI. EX.:
+C:\ComputacaoAutonoma\ClassLibrary_UDDI
+3.2) Inserir o nome ou IP das máquinas onde estão instalados os Serviços Monitorados. EX.:
+<?xml version="1.0" encoding="utf-8" ?>
+<Servidores>
+  <Servidor>Roger-LENOVO</Servidor>
+  <Servidor>Roger-HP</Servidor>
+  <Servidor>192.168.137.159</Servidor> 
+</Servidores>
+
+4) Executar pelo Visual Studio.
+4.1) Fechar os WcfSvcHost do Servico_Monitorado.Service_Monitorado
+4.1) Fechar o GerenciadorCor.Service_GerenciadorCor
+
+Simulação
+=========
+Para simular a ação dos agentes, pare ou desative o serviço monitorado com o windows service do serviço que está sendo chamado pelo orquestrador
+
